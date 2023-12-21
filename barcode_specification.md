@@ -27,32 +27,46 @@ anything else
 
 ### Available Keys
 
-| Key | Definition           | Value Type |
-|-----|----------------------|------------|
-| o   | Organization Id      | number     |
-| k   | Kippa Id             | number     |
-| a   | amount               | number     |
-| c   | custom               | string     |
-| l   | Lock amount          | boolean    |
-| dr  | Disable Recurring    | boolean    |
-| di  | Disable Installments | boolean    |
-| p   | Phone Number         | string     |
-| fn  | first name           | string     |
-| ln  | lest name            | string     |
-| ad  | address              | string     |
-| cm  | Comment              | string     |
-| e   | email                | string     |
-| er  | send email receipt   | boolean    |
-| fnr | First name Required  | boolean    |
-| lnr | Lest name Required   | boolean    |   
-| adr | Address Required     | boolean    |   
-| cmr | Comment required     | boolean    |   
-| er  | Email  Required      | boolean    |   
+| Key | Definition                   | Value Type      |
+|-----|------------------------------|-----------------|
+| o   | Organization Id              | number          |
+| k   | Kippa Id                     | number          |
+| a   | amount                       | number          |
+| l   | Lock amount                  | boolean         |
+| ma  | Minimum Amount               | number          |
+| dr  | Disable Recurring            | boolean         |
+| rc  | Recurring Count              | number          |
+| rf  | Recurring Frequency          | `d` `w` `m` `y` |
+| di  | Disable Installments         | boolean         |
+| im  | Installments Months          | number          |
+| mim | Maximum Installments Months  | number          |
+| do  | Default Open Option          | `o` `r` `i`     |
+| p   | Phone Number                 | string          |
+| fn  | first name                   | string          |
+| ln  | lest name                    | string          |
+| ad  | address                      | string          |
+| cm  | Comment                      | string          |
+| e   | email                        | string          |
+| ser | send email receipt           | boolean         |
+| fns | First Name Suggest           | boolean         |
+| fnr | First name Required          | boolean         |
+| lns | Lest Name suggest            | boolean         |
+| lnr | Lest name Required           | boolean         |   
+| ads | Address Suggest              | boolean         |
+| adr | Address Required             | boolean         |   
+| cms | Command Suggest              | boolean         |
+| cmr | Comment required             | boolean         |   
+| es  | Email Suggest                | boolean         |
+| er  | Email  Required              | boolean         |   
+| c   | custom                       | string          |
 
 organization id or kippa id is required, if you use kippa id than organization id will be ignored,
 if you omit kippa id than donation will go directly to organization with no kupa.   
 everything else is optional
 
+`rf` Recurring frequency: is `d` for daily, `w` for weekly, `m` for monthly and `y` for yearly
+
+`do` Default open option: is `o` for one-time, `r` for recurring and `i` for installments
 
 
 
