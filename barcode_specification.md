@@ -49,11 +49,12 @@ anything else
 | e   | email                       | string          |
 | ser | send email receipt          | boolean         |
 | sif | Suggest Info Fields         | boolean         |
+| ccn | Comment Custom name         | string          |
 | fnr | First name Required         | boolean         |
 | lnr | Lest name Required          | boolean         |   
 | adr | Address Required            | boolean         |   
 | cmr | Comment required            | boolean         |   
-| es  | Email Suggest               | boolean         |
+| er  | Email Required              | boolean         |
 | c   | custom                      | string          |
 
 organization id or kippa id is required, if you use kippa id than organization id will be ignored,
