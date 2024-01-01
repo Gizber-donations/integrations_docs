@@ -50,6 +50,7 @@ anything else
 | ser | send email receipt          | boolean         |
 | sif | Suggest Info Fields         | boolean         |
 | ccn | Comment Custom name         | string          |
+| pr  | Phone required              | boolean         |
 | fnr | First name Required         | boolean         |
 | lnr | Lest name Required          | boolean         |   
 | adr | Address Required            | boolean         |   
